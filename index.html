@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Node Linking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <div class="controls">
+    <button id="spawnNode">Spawn Node</button>
+    <div class="control">
+      <label for="springSlider">Spring Stiffness:</label>
+      <input type="range" id="springSlider" min="0.001" max="0.05" step="0.001" value="0.01">
+    </div>
+    <div class="control">
+      <label for="stringLengthSlider">String Length:</label>
+      <input type="range" id="stringLengthSlider" min="50" max="300" step="10" value="150">
+    </div>
+    <div class="control">
+      <label for="boundarySlider">Wall Repulsion:</label>
+      <input type="range" id="boundarySlider" min="0.001" max="0.1" step="0.005" value="0.005">
+    </div>
+    <div class="control">
+      <label for="wallRangeSlider">Wall Repulsion Range:</label>
+      <input type="range" id="wallRangeSlider" min="20" max="2000" step="5" value="2000">
+    </div>
+    <div class="control">
+      <label for="nodeRepulsionSlider">Node Repulsion:</label>
+      <input type="range" id="nodeRepulsionSlider" min="1000" max="10000" step="500" value="5000">
+    </div>
+    <div class="control">
+      <label for="frictionSlider">Friction:</label>
+      <input type="range" id="frictionSlider" min="0.90" max="1.0" step="0.01" value="0.90">
+    </div>
+  </div>
+  <canvas id="nodeCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
